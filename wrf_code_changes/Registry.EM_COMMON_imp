@@ -1,5 +1,5 @@
 # CHANGES FOR TS ERIN PROJECT: Adds HFX_INPUT, LH_INPUT, and QFX_INPUT from control run as state variables. 
-# See impose.pdf for more information
+# See impose.pdf for more information and remove _imp suffix from title when running code
 
 #At the present time this file is managed manually and edited by hand.                                         
 #                                               
