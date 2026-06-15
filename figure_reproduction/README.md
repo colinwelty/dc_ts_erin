@@ -1,6 +1,6 @@
 # Figure reproduction
 
-This directory contains notebook-based workflows used to regenerate Erin analysis figures.
+This directory contains notebook-based workflows used to generate Erin analysis figures.
 
 ## Files
 
@@ -16,3 +16,7 @@ This directory contains notebook-based workflows used to regenerate Erin analysi
 
 - `README.md`
   - Documents the purpose of files in this directory.
+ 
+## Tips
+
+Make sure to replace file paths with designated file paths for your workflow. For this project, output exceeds 250 GB for each simulation. Therefore, output data is not included in this repository.
