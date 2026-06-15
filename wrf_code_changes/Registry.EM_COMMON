@@ -1,4 +1,6 @@
-# At the present time this file is managed manually and edited by hand.                                         
+# CHANGES FOR TS ERIN PROJECT: Adds HFX_INPUT, LH_INPUT, and QFX_INPUT from control run as state variables. See README.MD for more information. 
+
+#At the present time this file is managed manually and edited by hand.                                         
 #                                               
 ################################################################################
 # Dimension specifications
