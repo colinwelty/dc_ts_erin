@@ -9,4 +9,7 @@ Contains code broken into 3 parts.
 
 Each of these parts has their own dedicated folder.
 
+**NOTE**
+Output files for each simulation total over 250GB. As such, select data was provided in .pkl form, with steps to replicate certain pieces of analysis in respective code. Future Zenodo link will likely provide cached output for more data--however, current code was uploaded for the purpose of showing was workflow was like in production of this paper.
+
 Please correspond with Colin Welty (colinwelty@ou.edu) for any questions regarding data, code, or output. 
