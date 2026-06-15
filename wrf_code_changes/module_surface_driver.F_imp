@@ -1,3 +1,6 @@
+! Search for "Colin" to find where surface fluxes are replaced with input to allow for imposition
+! Also, remove _imp from title for code to work
+
 !WRF:MEDIATION_LAYER:PHYSICS
 !
 MODULE module_surface_driver
