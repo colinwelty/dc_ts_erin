@@ -1,1 +1,1 @@
-Test
+Our study primarily leverages WRF v4.5.0 model output ran by Colin Welty. The 6 runs total over 1 TB of data, making public access difficult. As such, select caches (in the cache folder) are included that are able to be used in certain notebooks for reproducibility. Other data include ERA5 data, NCEP Stage IV data, and Mesonet Data, which are included (or to be included) in this folder.
