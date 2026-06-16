@@ -1,15 +1,22 @@
 # dc_ts_erin
-Public repository for code used in production of The Diurnal Cycle in Tropical Storm Erin (2007) by Welty et al. 2026.
 
-Contains code broken into 3 parts.
+This repository contains the code and supporting data used to produce analyses for **The Diurnal Cycle in Tropical Storm Erin (2007)** (Welty et al., 2026).
 
-1.) Changes made to code within WRF v4.5.0 for altering the diurnal cycle timing, running the imposition method, and namelists.
-2.) Post-processes scripts to parse WRF data into different forms for various analyses.
-3.) Analysis scripts for figure reproductions.
+The workflow is split into three parts:
 
-Each of these parts has their own dedicated folder.
+1. **`wrf_code_changes/`**: source-level WRF v4.5.0 edits and Erin namelists used to run control and imposed-flux experiments.
+2. **`post_processing/`**: scripts that stitch model outputs, interpolate variables, and derive storm-center tracks from relative vorticity.
+3. **`figure_reproduction/`**: notebooks that reproduce manuscript figures (rainfall, ERA5 environment, LLJ, tracks, and vorticity-budget diagnostics).
 
-**NOTE**
-Output files for each simulation total over 250GB. As such, select data was provided in .pkl form, with steps to replicate certain pieces of analysis in respective code. Future Zenodo link will likely provide cached output for more data--however, current code was uploaded for the purpose of showing was workflow was like in production of this paper.
+A small subset of derived analysis products is included in **`cache/`** so key figure workflows can run without shipping the full model archive.
 
-Please correspond with Colin Welty (colinwelty@ou.edu) for any questions regarding data, code, or output. 
+## Data summary
+
+Full simulation output is very large (6 simulations, >1 TB total), so this repository includes only representative reproducibility data:
+
+- **`data/`**: observation-side files used by notebooks, primarily NCEP Stage IV precipitation files for Erin dates plus source README metadata.
+- **`cache/`**: precomputed `.pkl` products (radial composites, layer means, and vorticity-budget terms) for control/diurnal/imposed experiments.
+
+Most scripts and notebooks still point to the original HPC paths used in production. To rerun locally, replace those paths with your own file locations.
+
+For questions about workflow, data provenance, or expected outputs, contact Colin Welty (colinwelty@ou.edu).
